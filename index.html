@@ -1,162 +1,174 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twice The Ice</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
 
-    body {
-      line-height: 1.6;
-      color: #333;
-    }
-
-    header {
-      background: #0077b6;
-      color: #fff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-      color: #0077b6;
-    }
-
-    .locations ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .locations li {
-      background: #caf0f8;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 5px;
-    }
-
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    .contact input, .contact textarea {
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .contact button {
-      padding: 15px;
-      background: #0077b6;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    footer {
-      background: #023e8a;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Twice The Ice - Your Local Source for Ice &amp; Water</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13a4ec",
+              "secondary": "#FFA500",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+              "text-light": "#0d171b",
+              "text-dark": "#e7eff3",
+              "subtext-light": "#4c809a",
+              "subtext-dark": "#94a3b8"
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
       }
-      section h2 {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
+    </script>
 </head>
-<body>
-
-  <!-- Hero Section -->
-  <header>
-    <h1>Twice The Ice</h1>
-    <p>Your hometown ice & water solution — anytime, anywhere</p>
-  </header>
-
-  <!-- About Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>We’re a local Tucson family serving ice and water around the clock. Grab a bag, fill a jug, and know you’re supporting a hometown business every time you stop by.</p>
-  </section>
-
-  <!-- Locations Section -->
-  <section class="locations">
-    <h2>Our Locations</h2>
-    <ul>
-      <li>NW corner of Golf Links and Wilmot</li>
-      <li>Prince and Fairview</li>
-      <li>SE corner of Grant and Swan</li>
-      <li>6th and Irvington</li>
-      <li>Benson Hwy and Drexel</li>
-      <li>Ina and Aerie</li>
-      <li>6th and 32nd</li>
-      <li>8455 E. Broadway</li>
-      <li>2770 W. Valencia</li>
-      <li>Grand Ave. in Nogales</li>
-    </ul>
-  </section>
-
-  <!-- How It Works Section -->
-  <section class="how-it-works">
-    <h2>How It Works</h2>
-    <p>1. Visit your nearest location.<br>
-       2. Grab a bag of ice or fill your jug.<br>
-       3. Enjoy clean, fresh water anytime you need it.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Twice The Ice. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200/80 dark:border-slate-800/80 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 md:px-10 py-3 w-full">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Twice The Ice</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#about">About</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#locations">Locations</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#contact">Contact</a>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors" href="#locations">
+<span class="truncate">Find a Location</span>
+</a>
+</div>
+</header>
+<main class="flex h-full grow flex-col items-center">
+<div class="flex w-full max-w-5xl flex-col px-4">
+<!-- Hero Section -->
+<section class="py-10 md:py-16 @container" id="home">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center" data-alt="A refreshing splash of clear water with ice cubes." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuASDF_NWbhLCt863pMJnzftkKYNTSVXmEbgPbqQri3K4f4m4Mj8U3BQR0H1LvGPgW-257A-o5ff5SInkJ9w6lnVURah1eon5PhVGGr5FkG4lgnzWkCRmuVyoUjjrWU0kNya5TtyuSfnMSATaWfWF47p3Yr_fIdR9id9KLFiAfUJ3_76tFm010m19qZ-1u4cR627zYEmKoiHnDvZt5NqEU1lV7YYPy1E3Rqd0bFq0dWRc2cI4LmusAjzT42sgMdM1AkcAfHtTcA20fcT");'>
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                    Your Local Source for Ice &amp; Water, 24/7.
+                </h1>
+<h2 class="text-slate-200 text-sm font-normal leading-normal @[480px]:text-base">
+                    Proudly serving Tucson and Nogales with fresh, filtered ice and purified water.
+                </h2>
+</div>
+<div class="flex flex-wrap gap-3 justify-center">
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-colors" href="#locations">
+<span class="truncate">Find a Location</span>
+</a>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base hover:bg-opacity-90 transition-colors" href="#about">
+<span class="truncate">Learn More</span>
+</a>
+</div>
+</div>
+</section>
+<!-- About & Products Section -->
+<section class="py-10 md:py-16 flex flex-col gap-10 @container" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+<div class="flex flex-col gap-4">
+<h2 class="text-text-light dark:text-text-dark tracking-light text-3xl font-bold leading-tight @[480px]:text-4xl @[480px]:font-black">
+                    A Tucson Family Business You Can Trust
+                </h2>
+<p class="text-subtext-light dark:text-subtext-dark text-base font-normal leading-normal max-w-[720px]">
+                    We're a local, family-owned business committed to providing our community with high-quality ice and water. Thank you for supporting a hometown business!
+                </p>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-secondary text-slate-900 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base w-fit hover:bg-opacity-90 transition-colors" href="#contact">
+<span class="truncate">Our Story</span>
+</a>
+</div>
+<div class="w-full h-64 lg:h-full bg-cover bg-center rounded-xl" data-alt="A sunny day with a view of the mountains surrounding Tucson, Arizona." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgEqTZjCrdoac6q8LxR030eGAtPoQwzkNcjj7j4MLGJY4OE1ewxHuWbosoyog3hHoovoxW6nKAyWmLP47FfWD5LXS8oo4lg0-xq70GgPnpejkrRNys080wJ3XpHbDjc3WdXi9BFjuQrCOGCIoU2V97pqFbIqmEJvXh7QogFluBKGmo8sixrLKBEXSV0Uo0ZCXhgrGXqjnCHdosLMy6Ri1zIDXQ2vWiXOnqPi5D8UuxrdO4TbZaHswHF-lJJUaSKui0l8G9UfxZWXrZ");'></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8">
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="A clear plastic bag filled with fresh ice cubes." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCu6b6lSGaUtKF5u1fQS5NXVdcYdLzuhfkzN96d0lTBamxSbILzQBIkxfXyFnXzJPdRy8fx_Sk9reeEn11mvJ53BSUEr1FDXyTs7bweGd39-ycl-z7VgHG3etEzMkjM6CCQ7F2OVeHdFKolpAfVUq9iTjOoLCshGwKPt_7ZS8RGUrlUukIiDe1M_Vdo59eLeOmssGLvnjaz0ts0Yht135SKAacTHjNEO7PPtyLm3N5wae-w2LWThjTNFd6Pmh8ouIxV3uRtArhVTvIw");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Grab a Bag</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">
+                        Our filtered, high-quality ice is perfect for any occasion, from backyard barbecues to special events.
+                    </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl" data-alt="A person filling a large reusable water jug from a dispenser." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRPqC10gMtzHDEhYcB-KxKnq9WeGDC42FYryXO8zmY5teTw2zMMqTzh6iWxsbzwmHli9KNDrSmHW7QeplwsDVR307cTDBTrCvcbRBf2TSzeNSUtBx44V-_gUG-GEZJnCc1nC7S5oHWEv0YfBsoKJF9v5OXFE6N-O6OL31n-_WOF9uoJ0w0AwbEaetA1VE-YA4MryBVrKYTrdruy_NhQUqmUImLz_txJm33_4olQYPmdbvvIakPcxRq1rdg7tRaxRmq0SwomUSYvfhm");'></div>
+<div>
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Fill a Jug</p>
+<p class="text-subtext-light dark:text-subtext-dark text-sm font-normal leading-normal">
+                        Get clean, purified water on the go. Bring your own container and fill up with fresh, great-tasting water.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Locations Section -->
+<section class="py-10 md:py-16" id="locations">
+<h2 class="text-text-light dark:text-text-dark text-3xl font-bold leading-tight tracking-[-0.015em] px-0 pb-5 pt-5 text-center">Find Us in Tucson &amp; Nogales</h2>
+<div class="@container flex flex-col h-full flex-1">
+<div class="flex flex-1 flex-col">
+<div class="bg-cover bg-center flex min-h-[480px] flex-1 flex-col justify-between p-4 @[480px]:rounded-xl @[480px]:p-8" data-location="Tucson, Arizona" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_ZYsF8U9HBmDMya6u-XpD40lUUICslX-g8H-kV0x4VCDIyeZB-SVQMo0odJ_ezEcOyiUerruUseOo0bJEvy_K9SMfxJxA7J4ENwGiTjGmASVVR3U49dYTzHenpm7_Qe7Cw-r84GVVtm81YLSESNmJMGA6y_ZF-x0-TJMgZOerUFNCG0rfrs_HT6LaCHl2tYxQb0LgqxAf5LSJW5nKb8UUwNTNtmoG7DwAElIyp_qvkddUSDq78JZ1UgIBUGBEtwqlIvB1KhCSyIt6");'>
+<label class="flex flex-col min-w-40 h-12 max-w-lg mx-auto">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full shadow-lg">
+<div class="text-subtext-light flex border-none bg-background-light dark:bg-background-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-background-light dark:bg-background-dark focus:border-none h-full placeholder:text-subtext-light dark:placeholder:text-subtext-dark px-4 pl-2 text-base font-normal leading-normal" placeholder="Search by address or zip code" value=""/>
+</div>
+</label>
+<div class="flex flex-col items-end gap-3">
+<div class="flex flex-col gap-0.5">
+<button class="flex size-10 items-center justify-center rounded-t-lg bg-background-light dark:bg-background-dark shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">add</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-b-lg bg-background-light dark:bg-background-dark shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">remove</span>
+</button>
+</div>
+<button class="flex size-10 items-center justify-center rounded-lg bg-background-light dark:bg-background-dark shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">near_me</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-slate-100 dark:bg-slate-900 mt-16" id="contact">
+<div class="max-w-5xl mx-auto px-4 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-5 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6_319_footer)"><path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path></g><defs><clippath id="clip0_6_319_footer"><rect fill="white" height="48" width="48"></rect></clippath></defs></svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-base font-bold leading-tight">Twice The Ice</h2>
+</div>
+<div class="flex flex-col md:flex-row gap-4 md:gap-8 text-center text-sm text-subtext-light dark:text-subtext-dark">
+<a class="hover:text-primary dark:hover:text-primary" href="tel:555-123-4567">555-123-4567</a>
+<a class="hover:text-primary dark:hover:text-primary" href="mailto:contact@twicetheice.com">contact@twicetheice.com</a>
+</div>
+<p class="text-xs text-subtext-light dark:text-subtext-dark/70">© 2024 Twice The Ice. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
